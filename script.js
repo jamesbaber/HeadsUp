@@ -21,4 +21,4 @@ function newName() {
 
 window.onload = newName;
 
-screen.orientation.lock("landscape-primary");
+screen.orientation.lock("landscape");
