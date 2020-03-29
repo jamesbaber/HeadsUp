@@ -1,0 +1,12 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 30px;
+    text-shadow: 0.5px 0.5px #bdc3c7;
+    font-size: 200%;
+    text-align: center;
+}
+
+a {
+    color: #0097e6;
+    text-decoration: none;
+}

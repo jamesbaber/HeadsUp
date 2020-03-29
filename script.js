@@ -11,7 +11,9 @@ function httpGetAsync(theUrl, callback)
 
 function newName() {
   httpGetAsync("names.txt", function(text) {
-    console.log(text);
+    var lines = text.split('\n');
+    var num = <Math.floor(Math.random() * (lines.length - 1));
+    console.log(lines[num])
   });
 }
 
