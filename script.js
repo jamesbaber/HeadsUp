@@ -16,6 +16,7 @@ function newName() {
     console.log(lines[num]);
     document.getElementById("name").innerHTML = lines[num]
   });
+
 }
 
 window.onload = newName;

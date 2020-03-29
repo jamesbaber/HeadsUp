@@ -1,12 +1,18 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 30px;
-    text-shadow: 0.5px 0.5px #bdc3c7;
-    font-size: 200%;
+    text-shadow: 2px 2px #bdc3c7;
+    font-size: 400%;
     text-align: center;
+    background-color: #ecf0f1;
 }
 
 a {
     color: #0097e6;
     text-decoration: none;
+}
+
+#name {
+  color: #2980b9;
+  margin-top: 100px;
 }
