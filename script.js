@@ -20,16 +20,3 @@ function newName() {
 }
 
 window.onload = newName;
-
-var pressTimer;
-$("a").mouseup(function(){
-  clearTimeout(pressTimer);
-  // Clear timeout
-  return false;
-}).mousedown(function(){
-  // Set timeout
-  pressTimer = window.setTimeout(function() {
-    newName();
-  },1000);
-  return false;
-});
