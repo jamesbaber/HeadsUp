@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Heads Up!</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+
+      function httpGetAsync(theUrl, callback)
+      {
+          var xmlHttp = new XMLHttpRequest();
+          xmlHttp.onreadystatechange = function() {
+              if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                  callback(xmlHttp.responseText);
+          }
+          xmlHttp.open("GET", theUrl, true);
+          xmlHttp.send(null);
+      }
+
+      window.onload = function () {
+        httpGetAsync("names.txt", function(text) {
+          console.log(text);
+        });
+      }
+
+    </script>
+  </head>
+  <body>
+    <div id="name"></div>
+  </body>
+</html>
