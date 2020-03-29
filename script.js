@@ -14,6 +14,7 @@ function newName() {
     var lines = text.split('\n');
     var num = Math.floor(Math.random() * (lines.length - 1));
     console.log(lines[num]);
+    document.getElementById("name").innerHTML = lines[num]
   });
 }
 
